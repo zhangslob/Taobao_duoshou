@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block body %}
+<ul class="categories list-unstyled">
+{% for cat in cates %}
+  <li class="row">
+    <div class="col-xs-2">
+      <a href={{ url_for('get_goods', catid=cat.catid, page=1) }}>{{ cat.name }}</a> -
+    </div>
+    <div class="col-xs-9">
+{% for sub in cat.subs %}
+      <a href={{ url_for('get_goods', catid=sub.catid, page=1) }}>{{ sub.name }}</a>,
+{% endfor %}
+    </div>
+{% else %}
+  <li><em>Unbelievable. No entries here so far.</em>
+{% endfor %}
+</ul>
+{% endblock %}

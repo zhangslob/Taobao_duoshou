@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="row page">
+  <div class="col-xs-12 text-center">
+    <h1>剁手吧</h1>
+    <p>聚合淘宝商品的淘货服务 Beta版<br>
+    </br>
+      <span class="package-amount">共收录了 <strong>{{ total }}</strong> 个商品</span>
+    </p>
+    <form role="search" class="navbar-form" action="search" method="get">
+      <div class="form-group">
+        <input type="text" name="key" placeholder="请输入商品信息"
+          class="search form-control clearable"><input type="hidden" name="page"
+          value="1"><button class="btn btn-primary" type="submit">搜  索</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

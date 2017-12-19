@@ -1,0 +1,82 @@
+body {
+  background-color: #fff;
+}
+
+body, button, input, select, textarea {
+  font: 12px/1.5 tahoma,arial,"Hiragino Sans GB",宋体,sans-serif;
+}
+
+blockquote, body, button, dd, dl, dt,
+fieldset, form, h1, h2, h3, h4, h5, h6,
+hr, input, legend, li, ol, p, pre, td,
+textarea, th, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.page h1 {
+  margin-bottom: 15px;
+}
+
+.page p {
+  font-size: 21px;
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+
+.page button {
+  border-color: #b8b8b8 transparent #ccc #b8b8b8;
+  border-radius: 0;
+  border-width: 1px 1px 1px 0;
+  height: auto;
+  padding: 13px 30px;
+}
+
+.search {
+  border-color: #b8b8b8 transparent #ccc #b8b8b8;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px 0 1px 1px;
+  display: inline-block;
+  border-radius: 0;
+  box-shadow: none;
+  font: 16px/18px arial;
+  height: auto;
+  outline: 0 none;
+  width: 280px;
+  padding: 13px 30px;
+}
+
+@media (min-width: 768px) {
+  .search {
+    width: 430px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .search {
+    width: 530px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .search {
+    width: 630px !important;
+  }
+}
+
+.footer {
+  height: 50px;
+  line-height: 50px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.entries li {
+  margin-bottom: 25px;
+}

@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block body %}
+<ul class="entries list-unstyled">
+{% for entry in entries %}
+  <li class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-xs-2 col-sm-2">
+      <a href={{ entry.url[0] }} target="_blank">
+        <img src="{{ entry.img_url[0] }}" alt="{{ entry.title }}" width="100"><br/>
+      </a>
+    </div>
+    <div class="col-xs-4 col-sm-4">
+      <a href={{ entry.url[0] }} target="_blank">{{ entry.title }}</a><br /><br />
+      <span class="hidden-sm hidden-xs">店铺名：{{ entry.nick }}<!--<a href={{ entry.shop_url }} target="_blank">查看店铺</a>-->&nbsp;&nbsp;&nbsp; 地区：{{ entry.loc }}</span>
+    </div>
+    <div class="col-xs-3 col-sm-2">
+      <span class="hidden-sm hidden-xs">原价：{{ entry.originalPrice }}</span><br/>
+      现价：{{ entry.price }}<br />
+    </div>
+    <div class="col-xs-3 col-sm-2">
+      销量：{{ entry.sales }}<br/>
+      <span class="hidden-sm hidden-xs">评论数：{{ entry.count[0] }}</span><br/>
+      <span class="hidden-sm hidden-xs"><a href={{ entry.comment_url[0] }} target="_blank">查看评论</a></span><br/>
+    </div>
+{% else %}
+  <li><em>Unbelievable. No entries here so far.</em>
+{% endfor %}
+</ul>
+
+<ul class="pager">
+  <li class="previous"><a id="prev" href="#">Previous</a></li>
+  <li class="next"><a id="next" href="#">Next</a></li>
+</ul>
+{% endblock %}
