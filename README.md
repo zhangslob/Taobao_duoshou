@@ -23,4 +23,4 @@ $ python server.py
 
 ```
 
-## 完整内容请来我的博客 [scrapy学习实例（四）采集淘宝数据并展示](https://zhangslob.github.io/2017/12/19/scrapy%E5%AD%A6%E4%B9%A0%E5%AE%9E%E4%BE%8B%EF%BC%88%E5%9B%9B%EF%BC%89%E9%87%87%E9%9B%86%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE%E5%B9%B6%E5%B1%95%E7%A4%BA/)
+#### 完整内容请来我的博客 [scrapy学习实例（四）采集淘宝数据并展示](https://zhangslob.github.io/2017/12/19/scrapy%E5%AD%A6%E4%B9%A0%E5%AE%9E%E4%BE%8B%EF%BC%88%E5%9B%9B%EF%BC%89%E9%87%87%E9%9B%86%E6%B7%98%E5%AE%9D%E6%95%B0%E6%8D%AE%E5%B9%B6%E5%B1%95%E7%A4%BA/)
